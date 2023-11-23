@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+li,
+dt,
+dd,
+p,
+div,
+span,
+img,
+a,
+table,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  /* font-weight: normal; */
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+header,
+footer,
+nav,
+section,
+article,
+main,
+aside,
+figure,
+figcaption {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+address {
+  text-decoration: none;
+  font-style: normal;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+}
+
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+  vertical-align: top;
+}
+
+summary {
+  display: block; /* デフォルトの表示を上書き */
+  list-style: none; /* リストスタイルをリセット */
+  outline: none; /* フォーカス時のアウトラインを削除 */
+  cursor: pointer; /* カーソルをポインターに設定 */
+
+  /* マーカー（矢印など）を非表示にする */
+  ::-webkit-details-marker {
+    display: none;
+  }
+  ::marker {
+    display: none;
+  }
+
+  /* その他のブラウザ固有のスタイルをリセットする場合は、
+     必要に応じて追加のプロパティをここに記述 */
+}
