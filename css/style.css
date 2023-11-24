@@ -270,7 +270,7 @@ dialog:not([open]) {
   letter-spacing: 0.48px;
 }
 .drawer-content__button {
-  font-size: 14pxs;
+  font-size: 14px;
   text-align: center;
 }
 
