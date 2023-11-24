@@ -35,10 +35,8 @@
     }
   }
   &__nav {
-    // スマホ時は非表示
     display: none;
 
-    // lgサイズになると表示、drawerは非表示
     @include mq(lg) {
       display: flex;
       gap: 16px;
