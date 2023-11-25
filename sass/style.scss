@@ -1240,11 +1240,10 @@
     }
   }
   &__button {
-    -webkit-appearance: none;
-    color: $color-brown;
     @include mq(md) {
       .button {
-        color: $color-brown;
+        -webkit-appearance: none;
+        color: $color-brown !important;
         font-weight: 700;
         padding: 4px 22px 6px 22px;
       }

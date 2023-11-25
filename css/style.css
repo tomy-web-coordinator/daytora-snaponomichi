@@ -1668,13 +1668,10 @@ dialog:not([open]) {
     font-size: 16px;
   }
 }
-.prizes-item-modal__button {
-  -webkit-appearance: none;
-  color: #4a3636;
-}
 @media screen and (min-width: 768px) {
   .prizes-item-modal__button .button {
-    color: #4a3636;
+    -webkit-appearance: none;
+    color: #4a3636 !important;
     font-weight: 700;
     padding: 4px 22px 6px 22px;
   }
