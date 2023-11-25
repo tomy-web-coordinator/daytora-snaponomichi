@@ -275,7 +275,7 @@ dialog:not([open]) {
 }
 .drawer-content__link:hover {
   color: #67b0c7;
-  text-decoration-color: #9ed0e0;
+  text-decoration-color: #67b0c7;
 }
 .drawer-content__button {
   font-size: 14px;
