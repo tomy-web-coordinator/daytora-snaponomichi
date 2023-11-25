@@ -72,10 +72,12 @@
   height: 100%;
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
   background: $color-white;
   z-index: 50;
-  padding: 82px 114px;
+  padding-top: 82px;
+  padding-bottom: 60px;
+  overflow-y: auto;
   //   通常時は画面の上側に隠す
   transform: translateY(-100%);
   transition: transform 0.3s linear;
@@ -85,20 +87,29 @@
   }
 
   &__menu {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+    width: fit-content;
+    margin: auto;
   }
 
   &__link {
-    font-size: 14px;
     display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.572;
     text-align: center;
-    letter-spacing: 0.48px;
+    transition: all 0.3s ease;
+    text-decoration: underline transparent;
+
+    &:hover {
+      color: $sub-color-dark-blue;
+      text-decoration-color: $main-color;
+    }
   }
 
   &__button {
     font-size: 14px;
+    margin-top: 20px;
     text-align: center;
   }
 }
