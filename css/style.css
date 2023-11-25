@@ -1016,6 +1016,7 @@ dialog:not([open]) {
         -ms-flex-align: start;
             align-items: flex-start;
     gap: 32px;
+    padding-inline: 20px;
   }
 }
 .how-to-entry__button {
@@ -1846,6 +1847,11 @@ dialog:not([open]) {
 .spots__swiper__prev::after, .spots__swiper__next::after {
   content: "";
 }
+@media screen and (min-width: 900px) {
+  .spots__bottom-wrapper {
+    padding-inline: 20px;
+  }
+}
 .spots__bottom {
   padding-top: 43px;
   padding-bottom: 19px;
@@ -2015,6 +2021,11 @@ dialog:not([open]) {
   .faq {
     margin-top: 120px;
     margin-bottom: 120px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .faq {
+    padding-inline: 20px;
   }
 }
 .faq__inner {
@@ -2198,6 +2209,11 @@ details[open] .faq-box__toggle::before {
 @media screen and (min-width: 768px) {
   .information {
     margin-top: 0;
+  }
+}
+@media screen and (min-width: 900px) {
+  .information__contents {
+    padding-inline: 20px;
   }
 }
 .information__inner {

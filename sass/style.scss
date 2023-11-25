@@ -660,6 +660,7 @@
       justify-content: center;
       align-items: flex-start;
       gap: 32px;
+      padding-inline: 20px;
     }
   }
   &__button {
@@ -1400,6 +1401,11 @@
     content: "";
   }
 
+  &__bottom-wrapper {
+    @include mq(lg) {
+      padding-inline: 20px;
+    }
+  }
   &__bottom {
     padding-top: 43px;
     padding-bottom: 19px;
@@ -1547,6 +1553,9 @@
   @include mq(md) {
     margin-top: 120px;
     margin-bottom: 120px;
+  }
+  @include mq(lg) {
+    padding-inline: 20px;
   }
   &__inner {
     text-align: center;
@@ -1714,6 +1723,13 @@ details[open] .faq-box__toggle::before {
   @include mq(md) {
     margin-top: 0;
   }
+
+  &__contents {
+    @include mq(lg) {
+      padding-inline: 20px;
+    }
+  }
+
   &__inner {
     padding-top: calc(24px - 8px);
     padding-right: calc(23.5px - 8px);
