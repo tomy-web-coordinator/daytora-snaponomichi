@@ -238,10 +238,12 @@ dialog:not([open]) {
   height: 100%;
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
   background: #ffffff;
   z-index: 50;
-  padding: 82px 114px;
+  padding-top: 82px;
+  padding-bottom: 60px;
+  overflow-y: auto;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
   -webkit-transition: -webkit-transform 0.3s linear;
@@ -254,23 +256,30 @@ dialog:not([open]) {
           transform: translateY(0);
 }
 .drawer-content__menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 40px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
 }
 .drawer-content__link {
-  font-size: 14px;
   display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.572;
   text-align: center;
-  letter-spacing: 0.48px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-text-decoration: underline transparent;
+          text-decoration: underline transparent;
+}
+.drawer-content__link:hover {
+  color: #67b0c7;
+  text-decoration-color: #9ed0e0;
 }
 .drawer-content__button {
   font-size: 14px;
+  margin-top: 20px;
   text-align: center;
 }
 
