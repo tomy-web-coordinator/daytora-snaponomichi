@@ -103,3 +103,11 @@ summary {
   /* その他のブラウザ固有のスタイルをリセットする場合は、
      必要に応じて追加のプロパティをここに記述 */
 }
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+details > summary::marker {
+  display: none;
+}
