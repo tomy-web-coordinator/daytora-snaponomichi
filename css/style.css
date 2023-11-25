@@ -1673,6 +1673,7 @@ dialog:not([open]) {
 }
 @media screen and (min-width: 768px) {
   .prizes-item-modal__button .button {
+    color: #4a3636;
     font-weight: 700;
     padding: 4px 22px 6px 22px;
   }
