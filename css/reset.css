@@ -76,6 +76,10 @@ button {
   background: transparent;
   cursor: pointer;
   font: inherit;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 input,
