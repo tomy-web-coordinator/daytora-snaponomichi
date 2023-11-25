@@ -1669,6 +1669,7 @@ dialog:not([open]) {
   }
 }
 .prizes-item-modal__button {
+  -webkit-appearance: none;
   color: #4a3636;
 }
 @media screen and (min-width: 768px) {

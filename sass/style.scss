@@ -1240,6 +1240,7 @@
     }
   }
   &__button {
+    -webkit-appearance: none;
     color: $color-brown;
     @include mq(md) {
       .button {
