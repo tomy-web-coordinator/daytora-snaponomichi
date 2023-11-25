@@ -1108,14 +1108,6 @@
     }
   }
 
-  &__icon--large {
-    @include mq(md) {
-      img {
-        width: 100px;
-      }
-    }
-  }
-
   &__img {
     border-radius: 8px 8px 0 0;
     overflow: hidden;
@@ -1140,6 +1132,7 @@
     font-weight: 700;
     width: 100%;
     min-height: 56px;
+    color: $color-brown;
 
     @include mq(md) {
       font-size: 16px;
@@ -1165,6 +1158,15 @@
     }
   }
 }
+
+.prizes-item__icon--large {
+  @include mq(md) {
+    img {
+      width: 100px;
+    }
+  }
+}
+
 .prizes-item__img--large {
   @include mq(md) {
     border-radius: 24px 24px 0 0;
@@ -1238,6 +1240,7 @@
     }
   }
   &__button {
+    color: $color-brown;
     @include mq(md) {
       .button {
         font-weight: 700;
@@ -1444,6 +1447,7 @@
   }
   &__button {
     margin-top: 24px;
+    color: $color-brown;
     .button {
       font-size: 16px;
 
