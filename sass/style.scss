@@ -1040,6 +1040,8 @@
   border-radius: 8px;
   background: $color-gray;
   flex-shrink: 0;
+  outline: 4px solid transparent;
+  transition: all 0.3s ease;
 
   @include mq(md) {
     border-radius: 16px;
@@ -1069,7 +1071,8 @@
   }
 
   &:hover {
-    outline: 4px solid $main-color;
+    outline-color: $main-color;
+
     .prizes-item__img img {
       transform: scale(1.2);
     }
@@ -1089,10 +1092,13 @@
     background: url(../img/img_prizes_zoom.svg) no-repeat center center / cover;
     transition: all 0.3s;
 
+    @include mq(md) {
+      border-end-end-radius: 16px;
+    }
+
     @include mq(lg) {
       width: 64px;
       height: 64px;
-      border-end-end-radius: 16px;
     }
   }
 
@@ -1147,6 +1153,28 @@
 }
 
 .prizes-item--large {
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 36px;
+    height: 36px;
+    border-end-end-radius: 8px;
+    background: url(../img/img_prizes_zoom.svg) no-repeat center center / cover;
+    transition: all 0.3s;
+
+    @include mq(md) {
+      border-end-end-radius: 16px;
+    }
+
+    @include mq(lg) {
+      width: 64px;
+      height: 64px;
+      border-end-end-radius: 24px;
+    }
+  }
+
   @include mq(md) {
     &::after {
       width: 80px;

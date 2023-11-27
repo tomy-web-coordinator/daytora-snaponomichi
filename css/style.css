@@ -1443,6 +1443,9 @@ dialog:not([open]) {
   background: #f5f5f5;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  outline: 4px solid transparent;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 @media screen and (min-width: 768px) {
   .prizes-item {
@@ -1472,7 +1475,7 @@ dialog:not([open]) {
   }
 }
 .prizes-item:hover {
-  outline: 4px solid #9ed0e0;
+  outline-color: #9ed0e0;
 }
 .prizes-item:hover .prizes-item__img img {
   -webkit-transform: scale(1.2);
@@ -1493,11 +1496,15 @@ dialog:not([open]) {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
+@media screen and (min-width: 768px) {
+  .prizes-item::after {
+    border-end-end-radius: 16px;
+  }
+}
 @media screen and (min-width: 900px) {
   .prizes-item::after {
     width: 64px;
     height: 64px;
-    border-end-end-radius: 16px;
   }
 }
 .prizes-item__icon {
@@ -1561,6 +1568,30 @@ dialog:not([open]) {
   }
 }
 
+.prizes-item--large::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 36px;
+  height: 36px;
+  border-end-end-radius: 8px;
+  background: url(../img/img_prizes_zoom.svg) no-repeat center center/cover;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+@media screen and (min-width: 768px) {
+  .prizes-item--large::after {
+    border-end-end-radius: 16px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .prizes-item--large::after {
+    width: 64px;
+    height: 64px;
+    border-end-end-radius: 24px;
+  }
+}
 @media screen and (min-width: 768px) {
   .prizes-item--large::after {
     width: 80px;
