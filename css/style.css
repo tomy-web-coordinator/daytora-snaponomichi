@@ -303,7 +303,10 @@ dialog:not([open]) {
   background: #ffffff;
   font-size: 14px;
   font-weight: 400;
+  width: 100%;
   height: 64px;
+  position: fixed;
+  z-index: 99;
 }
 .header__inner {
   padding-inline: 20px;
@@ -378,6 +381,7 @@ dialog:not([open]) {
 
 .fv {
   position: relative;
+  margin-top: 64px;
 }
 .fv__bg-image {
   position: absolute;

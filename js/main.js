@@ -33,7 +33,7 @@ jQuery('a[href^="#"]').on("click", function (e) {
   const speed = 300;
   const id = jQuery(this).attr("href");
   const target = jQuery("#" === id ? "html" : id);
-  const position = jQuery(target).offset().top;
+  const position = jQuery(target).offset().top + -64;
 
   jQuery("html, body").animate(
     {
