@@ -835,6 +835,8 @@
     font-size: 16px;
     font-weight: 700;
     margin-top: 16px;
+    text-wrap: balance;
+    word-break: auto-phrase;
 
     @include mq(lg) {
       font-size: 20px;
@@ -843,6 +845,9 @@
   }
   &__text {
     margin-top: 16px;
+    outline: 1px solid coral;
+    text-wrap: balance;
+    word-break: auto-phrase;
 
     @include mq(lg) {
       font-size: 16px;

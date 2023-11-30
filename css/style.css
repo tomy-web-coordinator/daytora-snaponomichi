@@ -1210,6 +1210,8 @@ dialog:not([open]) {
   font-size: 16px;
   font-weight: 700;
   margin-top: 16px;
+  text-wrap: balance;
+  word-break: auto-phrase;
 }
 @media screen and (min-width: 900px) {
   .how-to-entry-step__title {
@@ -1219,6 +1221,9 @@ dialog:not([open]) {
 }
 .how-to-entry-step__text {
   margin-top: 16px;
+  outline: 1px solid coral;
+  text-wrap: balance;
+  word-break: auto-phrase;
 }
 @media screen and (min-width: 900px) {
   .how-to-entry-step__text {
