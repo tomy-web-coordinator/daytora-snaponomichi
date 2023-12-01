@@ -1221,7 +1221,6 @@ dialog:not([open]) {
 }
 .how-to-entry-step__text {
   margin-top: 16px;
-  outline: 1px solid coral;
   text-wrap: balance;
   word-break: auto-phrase;
 }
